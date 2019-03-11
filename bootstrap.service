@@ -1,0 +1,10 @@
+[Unit]
+Description=My service (Homework1)
+
+[Service]
+Type=oneshot
+#ExecStartPre=git clone git@github.com:ancabalaita/Configure-virtual-machine.git
+ExecStart=/root/tema1/bootstrap.sh
+
+[Install]
+WantedBy=multi-user.target
